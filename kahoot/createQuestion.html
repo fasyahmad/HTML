@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/register.css" />
+    <link rel="stylesheet" href="css/util.css" />
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <title>create question</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color:#333">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#"><img src="img/khw.png" width="90px;" alt="" /></a>
+
+            <h3 style="color:white">Create Question</h3>
+
+            <form class="form-inline my-2 my-lg-0 mr-4">
+                <a href="quizlist.html" data-toggle="modal" data-target="#modalLoginForm">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" data-toggle="modal"
+                    data-target="#modalLoginForm">
+                    Log Out
+                </button>
+                </a>
+            </form>
+        </div>
+    </nav>
+    <!-- NAVBAR -->
+    <!-- REGISTER -->
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="p-t-40 p-b-20" style="width:600px;">
+                <form class="login100-form validate-form">
+                    <div class="login100-form-title p-b-30">
+                        <img class="w-50" src="img/kh.png" alt="" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quiz">Quiz Id</label>
+                        <input type="number" class="form-control" id="quiz" placeholder="quiz_id">
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <div class="form-group">
+                            <label for="number">Question Number</label>
+                            <input type="email" class="form-control" id="number" placeholder="question_number">
+                        </div>
+                        <div class="form-group">
+                            <label for="answer">answer</label>
+                            <input type="text" class="form-control" id="answer" placeholder="answer">
+                        </div>
+                        
+                    </div>
+
+                    <div class="form-group">
+                        <label for="question">question</label>
+                        <input type="text" class="form-control" id="question" placeholder="question">
+                    </div>
+
+                    <div class="options">
+                        <div class="optionAB d-flex justify-content-between">
+                            <div class="form-group" style="width: 290px;">
+                                <label for="answer">Option A</label>
+                                <input type="text" class="form-control" id="answerA" placeholder="Answer A">
+                            </div>
+                            <div class="form-group" style="width: 290px;">
+                                <label for="answer">Option B</label>
+                                <input type="text" class="form-control" id="answerB" placeholder="Answer B">
+                            </div>
+                        </div>
+
+                        <div class="optionCD d-flex justify-content-between">
+                            <div class="form-group" style="width: 290px;">
+                                <label for="answer">Option C</label>
+                                <input type="text" class="form-control" id="answerC" placeholder="Answer C">
+                            </div>
+                            <div class="form-group" style="width: 290px;">
+                                <label for="answer">Option D</label>
+                                <input type="text" class="form-control" id="answerD" placeholder="Answer D">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="container-login100-form-btn">
+                        <button class="login100-form-btn" onclick="createQuestion()">
+                            Create
+                        </button>
+                    </div>
+
+                    <ul class="login-more p-t-190">
+                        <li class="m-b-8">
+                            <span class="txt1">
+                                Forgot
+                            </span>
+
+                            <a href="#" class="txt2">
+                                Username / Password?
+                            </a>
+                        </li>
+
+                        <li>
+                            <span class="txt1">
+                                Don’t have an account?
+                            </span>
+
+                            <a href="#" class="txt2">
+                                Sign up
+                            </a>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- REGISTER -->
+
+
+    <!-- TEMPLATE -->
+    <!--===============================================================================================-->
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/daterangepicker/moment.min.js"></script>
+    <script src="vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- jquery script -->
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/register.js"></script>
+</body>
+
+</html>
